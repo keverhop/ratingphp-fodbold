@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: arial,helvetica, sans-serif; }
+
+html, body {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: white;
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  body .loginBox {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    color: black;
+    padding: 1em;
+    border: 3px solid black;
+    border-radius: 10px; }
+    body .loginBox .form input[type="text"], body .loginBox .form input[type="password"], body .loginBox .form input[type="email"], body .loginBox .form input[type="file"], body .loginBox .form select {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 10px;
+      background: #F5F5F5;
+      border: none;
+      margin-bottom: 1em;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: 300;
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      body .loginBox .form input[type="text"]:focus, body .loginBox .form input[type="password"]:focus, body .loginBox .form input[type="email"]:focus, body .loginBox .form input[type="file"]:focus, body .loginBox .form select:focus {
+        outline: none;
+        -webkit-box-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
+        box-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
+        background: white; }
+      body .loginBox .form input[type="text"]:hover, body .loginBox .form input[type="password"]:hover, body .loginBox .form input[type="email"]:hover, body .loginBox .form input[type="file"]:hover, body .loginBox .form select:hover {
+        -webkit-box-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
+        box-shadow: 0 0 10px rgba(156, 39, 176, 0.3); }
+    body .loginBox .form select:focus {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px; }
+    body .loginBox .form input[type="submit"] {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: #F5F5F5;
+      color: black;
+      font-weight: 500;
+      font-size: 1em;
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      text-transform: uppercase; }
+      body .loginBox .form input[type="submit"]:focus {
+        outline: none; }
+      body .loginBox .form input[type="submit"]:hover {
+        -webkit-box-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
+        box-shadow: 0 0 10px rgba(156, 39, 176, 0.3); }
+    body .loginBox .loginInfo {
+      margin-top: .5em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      body .loginBox .loginInfo a {
+        color: inherit;
+        text-decoration: none; }
+    body .loginBox .besked {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      text-align: center; }
+      body .loginBox .besked.gron {
+        background: rgba(76, 175, 80, 0.9); }
+      body .loginBox .besked.rod {
+        background: rgba(244, 67, 54, 0.9); }
+    body .loginBox .teacherImage {
+      display: block;
+      margin: 0 auto;
+      max-width: 289px; }
+    body .loginBox .teacherName {
+      display: block;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.5em; }
+    body .loginBox .avgRating {
+      display: block;
+      text-align: center;
+      font-size: 1.2em; }
+      body .loginBox .avgRating .rated {
+        font-size: 300; }
+      body .loginBox .avgRating .ratingValue {
+        font-weight: 500; }
+    body .loginBox .rating {
+      border: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body .loginBox .rating input {
+        display: none; }
+      body .loginBox .rating label {
+        color: #DDD; }
+        body .loginBox .rating label:before {
+          margin: 5px;
+          font-size: 1.25em;
+          font-family: FontAwesome;
+          content: "\f005"; }
+      body .loginBox .rating > input:checked ~ label, body .loginBox .rating:not(:checked) > label:hover, body .loginBox .rating:not(:checked) > label:hover ~ label {
+        color: #FFD700; }
+      body .loginBox .rating > input:checked + label:hover, body .loginBox .rating > input:checked ~ label:hover, body .loginBox .rating > label:hover ~ input:checked ~ label, body .loginBox .rating > input:checked ~ label:hover ~ label {
+        color: #FFED85; }
+    body .loginBox h1 {
+      margin: 0;
+      padding: 0;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.8em; }
+    body .loginBox .rank, body .loginBox .fag, body .loginBox .snit {
+      display: block; }
+    body .loginBox .divider {
+      display: block;
+      border-bottom: 1px dotted #ccc;
+      margin: 1em 0; }
+      body .loginBox .divider:last-of-type {
+        border: none; }
+    body .loginBox .subjects {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body .loginBox .subjects .subject a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.2em;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        body .loginBox .subjects .subject a:hover, body .loginBox .subjects .subject a:focus {
+          text-decoration: underline; }
+    body .loginBox .admin {
+      width: 100%; }
+    body .loginBox .adminImg {
+      max-width: 100px; }
